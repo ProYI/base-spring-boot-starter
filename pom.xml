@@ -20,6 +20,7 @@
         <easypoi-starter.version>4.2.0</easypoi-starter.version>
         <jackson.version>2.11.3</jackson.version>
         <swagger.version>3.0.0</swagger.version>
+        <guava.version>30.0-jre</guava.version>
     </properties>
 
     <dependencies>
@@ -95,8 +96,14 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
-        <!-- swagger2 start -->
-
+        <!-- swagger2 end -->
+        <!-- guava start -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <!-- guava end -->
     </dependencies>
 
     <build>
