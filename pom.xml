@@ -21,6 +21,7 @@
         <jackson.version>2.11.3</jackson.version>
         <swagger.version>3.0.0</swagger.version>
         <guava.version>30.0-jre</guava.version>
+        <bcprov-jdk15on.version>1.66</bcprov-jdk15on.version>
     </properties>
 
     <dependencies>
@@ -104,6 +105,13 @@
             <version>${guava.version}</version>
         </dependency>
         <!-- guava end -->
+        <!-- aes pkcs7 扩展包 start -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>${bcprov-jdk15on.version}</version>
+        </dependency>
+        <!-- aes pkcs7 扩展包 end -->
     </dependencies>
 
     <build>
